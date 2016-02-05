@@ -62,15 +62,15 @@
         }
         .buttontext{
             font-family:'Montserrat' ,sans-serif;
-            font-size: 13px;
-            font-style: oblique;
+            font-size: 15px;
+            
             color:white;
 
         }
-        .modal-backdrop{
-        	background-color: #000;
-        }
+         
+        
     </style>
+
 </head>
 <body>
 
@@ -80,14 +80,18 @@
     <h2 id="subheading">(adj.) <span id="subheading2"> having a consuming passion to write...</span> </h2>
     <button type="button"  id="loginbutton" class="buttontext btn bottom z-depth-5" data-toggle="modal" data-target="#popup" >Login</button>
     <button type="button" id="signupbutton" class="buttontext btn bottom z-depth-5"  >Sign Up</button>
-</div>
-<div id="popup" class="modal modal-backdrop fade">
+
+
+
+
+
+<div id="popup" class="modal " tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 
             <div class="modal-header">
                 <button type="button" data-dismiss="modal" class="close" >&times;</button>
-                <h2>Login:</h2>
+                <h2 class="modal-title"  aria-hidden="true">Login:</h2>
                 
             </div>
         <div  class="modal-body">
@@ -102,6 +106,7 @@
             
         </div>
     </div>
+</div>
 </div>
 </body>
 
