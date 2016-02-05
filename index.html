@@ -13,6 +13,7 @@
     <title>Welcome to thescripturient</title>
     <style>
         body{
+        	background-color: #fbc056;
             background-image: url("./images/inkwel.jpg");
             background-size: cover;
             background-position: center;
@@ -62,10 +63,13 @@
         .buttontext{
             font-family:'Montserrat' ,sans-serif;
             font-size: 13px;
+            font-style: oblique;
             color:white;
 
         }
-
+        .modal-backdrop{
+        	background-color: #000;
+        }
     </style>
 </head>
 <body>
@@ -77,20 +81,22 @@
     <button type="button"  id="loginbutton" class="buttontext btn bottom z-depth-5" data-toggle="modal" data-target="#popup" >Login</button>
     <button type="button" id="signupbutton" class="buttontext btn bottom z-depth-5"  >Sign Up</button>
 </div>
-<div id="popup" class="modal fade">
+<div id="popup" class="modal modal-backdrop fade">
     <div class="modal-dialog">
         <div class="modal-content">
 
             <div class="modal-header">
-                <h2>Login:</h2>
                 <button type="button" data-dismiss="modal" class="close" >&times;</button>
+                <h2>Login:</h2>
+                
             </div>
-        <div class="modal-body">
+        <div  class="modal-body">
     <form >
         <h4>Username</h4><input class="form-control" type="text" placeholder="Email">
         <h4>Password</h4><input class="form-control" type="password" placeholder="Password">
-        
-        <input type="submit" class="btn btn-primary " value="login">
+        <div align="center">
+        <button type="submit" class="btn btn-primary right-align buttontext">Login</button>
+    	</div>
     </form>
         </div>
             
