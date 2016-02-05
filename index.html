@@ -77,31 +77,26 @@
     <button type="button"  id="loginbutton" class="buttontext btn bottom z-depth-5" data-toggle="modal" data-target="#popup" >Login</button>
     <button type="button" id="signupbutton" class="buttontext btn bottom z-depth-5"  >Sign Up</button>
 </div>
-
 <div id="popup" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-title">
-                <label>LOGIN</label>
+
+            <div class="modal-header">
+                <h2>Login:</h2>
                 <button type="button" data-dismiss="modal" class="close" >&times;</button>
             </div>
         <div class="modal-body">
     <form >
-        <label>Username</label>
-        <input type="text">
-        <input type="submit" value="login">
+        <h4>Username</h4><input class="form-control" type="text" placeholder="Email">
+        <h4>Password</h4><input class="form-control" type="password" placeholder="Password">
+        
+        <input type="submit" class="btn btn-primary " value="login">
     </form>
         </div>
-            <div class="modal-footer">
-
-            </div>
+            
         </div>
     </div>
 </div>
-<script type="text/javascript" >
-</script>
-
-
 </body>
 
 </html>
