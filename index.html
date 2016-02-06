@@ -79,7 +79,18 @@
     <h1 id="name">Thescripturient</h1>
     <h2 id="subheading">(adj.) <span id="subheading2"> having a consuming passion to write...</span> </h2>
     <button type="button"  id="loginbutton" class="buttontext btn bottom z-depth-5" data-toggle="modal" data-target="#popup" >Login</button>
-    <button type="button" id="signupbutton" class="buttontext btn bottom z-depth-5"  >Sign Up</button>
+    <button type="button" id="signupbutton" class="buttontext btn bottom z-depth-5"  data-toggle="modal" data-target="#signup">Sign Up</button>
+</div>
+
+<div class="modal" id="signup" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 410.417px;">
+<div class="modal-content" ="rcvr_email"="">
+<p> Please enter your registered email. We'll send the credentials required.</p>
+    <form>
+      EMAIL : <input type="email" name="frgt_mail" id="frgt_mail">
+    </form>
+
+</div>
+<a href="#!" id="send" class="modal-action btn modal-close waves-effect waves">SEND</a>
 </div>
 
 
