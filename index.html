@@ -12,11 +12,12 @@
     <link rel="icon" type="image/icon" href="./images/iconpng.png">
     <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:700,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    
     <title>Welcome to thescripturient</title>
     <style>
         body{
         	background-color: #fbc056;
-            background-image: url("./images/inkwel.jpg");
+            background-image: url("./images/paperleaf.jpg");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -29,26 +30,26 @@
         }
 
         #name{
-            font-family: 'Great Vibes', cursive;
-            color: indigo;
-            font-size: 128px;
+            font-family: 'Cabin Sketch', cursive;
+            color: white;
+            font-size: 108px;
             padding-top:0% ;
             padding-bottom: 0%;
             margin-bottom: 0%;
-            padding-right: 5%;
+            padding-right: 0 	%;
         }
 
         #subheading{
             padding-top: 5px;
-            padding-left: 280px;
+            padding-left: 250px;
             font-size: 25px;
-            color: purple;
+            color: white;
         font-family: monospace,cursive;
         }
         #subheading2{
-            color: darkred;
+            color: white;
             font-family: 'Caveat' , cursive;
-            font-size: 30px;
+            font-size: 25px;
         }
 
         #loginbutton , #signupbutton{
@@ -63,9 +64,9 @@
             margin-bottom: 0%
         }
         .buttontext{
-            font-family:'Montserrat' ,sans-serif;
+            font-family:'Open Sans' ,sans-serif;
             font-size: 15px;
-            font-style: inherit;
+            font-style: bold;
             color:white;
         }
         #popup{
@@ -79,9 +80,9 @@
 
 <div class="container" align="center">
     <img id="logo" class="img-responsive" height="150px" width="150px" src="./images/logo.jpg">
-    <h1 id="name">Thescripturient</h1>
+    <h1 id="name">thescripturient</h1>
     <h2 id="subheading">(adj.) <span id="subheading2"> having a consuming passion to write...</span> </h2>
-    <button type="button"  id="loginbutton" class="buttontext btn bottom z-depth-5" data-toggle="modal" data-target="#popup" >Login</button>
+    <button type="button"  id="loginbutton" class="buttontext btn bottom z-depth-5" data-anim="la-anim-1" data-toggle="modal" data-target="#popup" >Log in</button>
     <button type="button" id="signupbutton" class="buttontext btn bottom z-depth-5"  data-toggle="modal" data-target="#signup">Sign Up</button>
 </div>
 
@@ -102,7 +103,7 @@
         <div class="modal-content">
 	        <div class="modal-header">
                 <button type="button" data-dismiss="modal" class="close" >&times;</button>
-                <h2 class="modal-title" id="myLabel" aria-hidden="true">Login:</h2>   
+                <h2 class="modal-title" id="myLabel" aria-hidden="true"><b>Login:</b></h2>   
             </div>
         	<div  class="modal-body">
     			<form role="form" >	
