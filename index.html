@@ -84,22 +84,12 @@
     <h1 id="name">thescripturient</h1>
     <h2 id="subheading">(adj.) <span id="subheading2"> having a consuming passion to write...</span> </h2>
     <button type="button"  id="loginbutton" class="buttontext btn bottom z-depth-5" data-anim="la-anim-1" data-toggle="modal" data-target="#popup" >Log in</button>
-    <button type="button" id="signupbutton" class="buttontext btn bottom z-depth-5"  data-toggle="modal" data-target="#signup">Sign Up</button>
-</div>
-
-<div class="modal" id="signup" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 410.417px;">
-<div class="modal-content" ="rcvr_email"="">
-<p> Please enter your registered email. We'll send the credentials required.</p>
-    <form>
-      EMAIL : <input type="email" name="frgt_mail" id="frgt_mail">
-    </form>
-
-</div>
-<a href="#!" id="send" class="modal-action btn modal-close waves-effect waves">SEND</a>
+    <button type="button" id="signupbutton" class="buttontext btn bottom z-depth-5" data-anim="la-anim-1" data-toggle="modal" data-target="#signup">Sign Up</button>
 </div>
 
 
-<div id="popup" class="modal fade"  tabindex="-1" aria-labelledby="myLabel" aria-hidden="true" role="dialog">
+
+<div id="popup" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
 	        <div class="modal-header">
@@ -109,16 +99,43 @@
         	<div  class="modal-body">
     			<form role="form" >	
     			<div class="form-group">
-       	 		<h4>Username</h4><input class="form-control" type="text" placeholder="Email">
+       	 		<h4>Username</h4><input class="form-control" id="username" type="text" placeholder="Email">
         		</div>
         		<div class="form-group">
-        		<h4>Password</h4><input class="form-control" type="password" placeholder="Password">
+        		<h4>Password</h4><input class="form-control" id="pass" type="password" placeholder="Password">
         		</div>
         		<div align="center">
         		<button type="submit" class="btn btn-primary right-align buttontext">Login</button>
     			</div>   	
     			</form>
         	</div>   
+        </div>
+    </div>
+</div>
+
+<div id="signup" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" class="close" >&times;</button>
+                <h2 class="modal-title" id="myLabel" aria-hidden="true"><b>Register:</b></h2>   
+            </div>
+            <div  class="modal-body">
+                <form role="form" > 
+                <div class="form-group">
+                <h4>Username</h4><input class="form-control" id="username" type="text" placeholder="Email">
+                </div>
+                <div class="form-group">
+                <h4>Password</h4><input class="form-control" id="pass" type="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                <h4>Confirm Password</h4><input class="form-control" id="cpass" type="password" placeholder="Re-Enter the Password">
+                </div>
+                <div align="center">
+                <button type="submit" class="btn btn-primary right-align buttontext">Sign Up</button>
+                </div>      
+                </form>
+            </div>   
         </div>
     </div>
 </div>

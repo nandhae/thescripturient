@@ -65,19 +65,140 @@
 -->
 <!DOCTYPE html>
 <html>
-<head>
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <link rel="stylesheet" href="./css/materialize.css">
-    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/icon" href="./images/iconpng.png">
-    <title>Welcome to thescripturient</title>
-</head>
-<body>
+    <!--HEAD PART-->
+    <head>
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <link rel="stylesheet" href="./css/materialize.css">
+        <link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/icon" href="./images/iconpng.png">
+        <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:700,400' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+        <title>Welcome to thescripturient</title>
+        <style type="text/css">
+            /* START OF Change the Navbar Colors/Font/Size */
+/* Adjust Menu (red) text color, (Garamond) font-family, (1.5em) font-size  */
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+display:        inline;
+color:          red;                        
+font-family:    sans-serif;
+font-size:      1.1em;
+padding:        5px 20px;
+}
+ 
+/* Adjust Menu colors - Normal */
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter {
+color:          gray;
 
-</body>
+}
+/* Adjust Menu colors - Hover
+.navbar .nav > li > a:hover, .navbar .nav > li > a:hover:first-letter { 
+color:          white;                      
+text-shadow:    none;
+}
+/* Adjust Menu colors - Active
+.navbar .nav > li > a:active, .navbar .nav > li > a:active:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a,
+.navbar .nav > li.current-menu-item > a:first-letter, 
+.navbar .nav > li.current-menu-ancestor > a:first-letter {
+color:          blue;
+text-shadow:    none;
+}
+ 
+/* Adjust dropdown Menu items (blue) text color, (yellow) shading and (green) border 
+.dropdown-menu > li > a {
+color:          blue;
+background:     yellow;
+border-bottom:  2px solid green;
+}
+ 
+/* Remove the Hover/Focus Colors  
+.navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a, 
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+color:          #5A5A5A;
+}
+/* END OF Change the Navbar Colors/Font/Size */
+ */
+        header{
+          
+            
+
+        }
+        #logo{
+            margin-top:8%;
+            padding-top: 0%;
+            margin-bottom: 0%;
+            border:#993366 solid  3px ;
+            border-radius: 30%;
+        }
+
+        #name{
+            font-family: 'Cabin Sketch', cursive;
+            color: #BECACF;
+            font-size: 78px;
+            padding-top:5% ;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+            padding-right: 0    %;
+        }
+
+        #subheading{
+            padding-top: 5px;
+            padding-left: 250px;
+            font-size: 15px;
+            color: white;
+        font-family: monospace,cursive;
+        }
+        #subheading2{
+            color: white;
+            font-family: 'Caveat' , cursive;
+            font-size: 15px;
+        }
+      </style>
+    </head>
+    <!--BODY PART -->
+    <body>
+    <header>
+    <img src="./images/paperleafh.jpg" style="position:cover;" class="img-responsive">
+    </header>
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">THESCRIPTURIENT</a>
+    </div>
+    <div id="navs">
+        <ul class="nav navbar-nav">
+            <li><a class="active" href="./home.html">Home</a></li>
+            <li><a href="#">Favorites</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul  class="nav navbar-nav navbar-right">
+            <li><a href="#">Sign Out</a></li>
+        </ul>
+    </div>
+
+
+   
+  </div><!-- /.container-fluid -->
+</nav>
+    </body>
 </html>
